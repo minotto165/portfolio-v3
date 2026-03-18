@@ -1,5 +1,35 @@
 <script lang="ts">
     import "iconify-icon";
+    interface repository {
+        name: string;
+        desc: string;
+        url: string;
+        tags: string[];
+    }
+
+    const repos: repository[] = [
+        {
+            name: "progoat",
+            desc: "LLM-powered CLI for programming education. Generate structured courses on any topic and solve coding exercises directly from your terminal.",
+            url: "https://github.com/minotto165/progoat",
+            tags: ["Golang", "CLI", "AI"],
+        },
+        {
+            name: "EatenDLP",
+            desc: "A Fluent UI YouTube downloader built with WPF and iNKORE.UI.WPF.Modern. Provides a clean, modern interface for content downloads.",
+            url: "https://github.com/minotto165/EatenDLP",
+            tags: ["Fluent", "WPF"],
+        },
+        {
+            name: "FluentVRC",
+            desc: "A Fluent UI launcher for VRChat.",
+            url: "https://github.com/minotto165/FluentVRC",
+            tags: ["Fluent", "WPF"],
+        },
+    ];
+
+    let repo: repository;
+    let tag: string;
 </script>
 
 <div class="min-h-screen w-screen flex flex-col">
@@ -33,17 +63,17 @@
                 <p>CLI tools, web experiments, motion design, and other weird projects.</p>
             </div>
             <div class="text-coffee-900 text-2xl 2xl:text-3xl flex flex-row gap-6">
-                <a href="https://github.com/minotto165" target="_blank">
+                <a href="https://github.com/minotto165" target="_blank" class="readme-btn">
                     <p>
                         [ <iconify-icon icon="mingcute:github-line" class="align-bottom -mx-1.5"></iconify-icon> Github ]
                     </p>
                 </a>
-                <a href="https://x.com/minotto165" target="_blank">
+                <a href="https://x.com/minotto165" target="_blank" class="readme-btn">
                     <p>
                         [ <iconify-icon icon="mingcute:twitter-line" class="align-bottom -mx-1.5"></iconify-icon> Twitter ]
                     </p>
                 </a>
-                <a href="https://youtube.com/@minotto165" target="_blank">
+                <a href="https://youtube.com/@minotto165" target="_blank" class="readme-btn">
                     <p>
                         [ <iconify-icon icon="mingcute:youtube-line" class="align-bottom -mx-1.5"></iconify-icon> Youtube ]
                     </p>
@@ -91,30 +121,29 @@
         </div>
     </section>
     <section class="section bg-coffee-50">
-        <p class="font-normal text-base 2xl:text-xl text-coffee-800">Readme</p>
+        <p class="font-normal text-base 2xl:text-xl text-coffee-800">Projects</p>
         <div class="flex flex-row gap-6 2xl:gap-10">
-            <div class="w-125 h-180 bg-coffee-100 flex flex-col">
-                <img alt="progoat" class="bg-amber-700 w-full h-80" />
-                <div class="flex flex-col p-7.5 gap-7.5 flex-1">
-                    <h2 class="text-coffee-800 text-[3rem] font-semibold">progoat</h2>
-                    <p class="text-coffee-900 text-xl leading-snug">LLM-powered CLI for programming education. Generate structured courses on any topic and solve coding exercises directly from your terminal.</p>
-                    <div class="flex gap-3">
-                        <div class="tag-bg">
-                            <p class="tag-text">Go</p>
+            {#each repos as repo}
+                <div class="project-card">
+                    <img alt="progoat" class="bg-amber-700 w-full h-60 2xl:h-80" />
+                    <div class="flex flex-col p-7.5 gap-5 2xl:gap-7.5 flex-1">
+                        <h2 class="text-coffee-800 text-3xl 2xl:text-5xl font-semibold">{repo.name}</h2>
+                        <p class="text-coffee-900 text-base 2xl:text-xl leading-snug">{repo.desc}</p>
+                        <div class="flex gap-3">
+                            {#each repo.tags as tag}
+                                <div class="tag-bg">
+                                    <p class="tag-text">{tag}</p>
+                                </div>
+                            {/each}
                         </div>
-                        <div class="tag-bg">
-                            <p class="tag-text">CLI</p>
-                        </div>
-                    </div>
-                    <div class="btn-bg mt-auto">
-                        <a href="https://github.com/minotto165" target="_blank" class="btn-text">
-                            <p>
+                        <a class="btn-bg mt-auto hard-shadow" href={repo.url} target="_blank">
+                            <p class="btn-text">
                                 <iconify-icon icon="mingcute:github-line" class="align-bottom -mx-1.5"></iconify-icon> Github
                             </p>
                         </a>
                     </div>
                 </div>
-            </div>
+            {/each}
         </div>
     </section>
 </div>

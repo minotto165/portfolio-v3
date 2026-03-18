@@ -51,15 +51,23 @@
         @apply text-coffee-200 text-lg 2xl:text-2xl font-light;
     }
     .tag-bg{
-        @apply w-20 h-10 bg-coffee-200 flex items-center justify-center;
+        @apply w-18 2xl:w-24 h-7 2xl:h-10 bg-coffee-200 flex items-center justify-center;
     }
     .tag-text{
-        @apply text-coffee-800 text-lg;
+        @apply text-coffee-800 text-sm 2xl:text-lg;
     }
     .btn-bg{
-        @apply w-35 h-15 bg-coffee-800 flex items-center justify-center;
+        @apply w-30 2xl:w-35 h-12 2xl:h-15 bg-coffee-800 hover:bg-[#7e4300] flex items-center justify-center hover:shadow-[0px_4px_0px_0px_#3d2708] hover:-translate-y-1 duration-150;
     }
     .btn-text{
-        @apply text-coffee-50 text-xl;
+        @apply text-coffee-50 text-lg 2xl:text-xl;
     }
+    .project-card{
+        @apply w-100 2xl:w-125 h-140 2xl:h-180 bg-coffee-100 flex flex-col;
+    }
+    .readme-btn{
+        @apply hover:-translate-y-0.5 hover:drop-shadow-[0px_2px_0_#fedbb3] duration-100
+    }
+
+
 }
