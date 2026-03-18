@@ -30,43 +30,53 @@
 
 @layer components{
     .header-line-v{
-        @apply h-full w-0.5 bg-[#532C0020] absolute inset-0;
+        @apply h-full w-px lg:w-0.5 bg-[#532C0020] absolute inset-0;
     }
     .header-line-h{
-        @apply h-0.5 w-full bg-[#532C0020] absolute inset-0;
+        @apply h-px lg:h-0.5 w-full bg-[#532C0020] absolute inset-0;
     }
     .section{
-        @apply px-12 py-12 2xl:py-16 flex flex-col gap-8 2xl:gap-10;
+        @apply px-8 md:px-12 py-8 md:py-10 lg:py-12 2xl:py-16 flex flex-col gap-4 md:gap-6 lg:gap-8 2xl:gap-10;
+    }
+    .section-title{
+        @apply font-normal text-[0.6rem] md:text-sm lg:text-base 2xl:text-xl
+    }
+    .body-text{
+        @apply text-sm md:text-lg lg:text-xl 2xl:text-3xl space-y-2 2xl:space-y-4 
     }
     .bar-bg{
-        @apply w-full max-w-4xl h-2 2xl:h-3 bg-coffee-950;
+        @apply w-full max-w-4xl h-1.5 md:h-2 2xl:h-3 bg-coffee-950;
     }
     .bar-fg{
         @apply h-full bg-coffee-200;
     }
     .bar-title{
-        @apply text-coffee-100 text-lg 2xl:text-2xl font-normal w-40;
+        @apply text-coffee-100 text-xs md:text-base lg:text-lg 2xl:text-2xl font-normal w-20 md:w-30 lg:w-40 shrink-0;
     }
     .bar-percentage{
-        @apply text-coffee-200 text-lg 2xl:text-2xl font-light;
+        @apply text-coffee-200 text-xs md:text-lg 2xl:text-2xl font-light;
     }
     .tag-bg{
-        @apply w-18 2xl:w-24 h-7 2xl:h-10 bg-coffee-200 flex items-center justify-center;
+        @apply w-14 md:w-18 2xl:w-24 h-5 md:h-7 2xl:h-10 bg-coffee-200 flex items-center justify-center;
     }
     .tag-text{
-        @apply text-coffee-800 text-sm 2xl:text-lg;
+        @apply text-coffee-800 text-[0.6rem] md:text-sm 2xl:text-lg;
     }
     .btn-bg{
-        @apply w-30 2xl:w-35 h-12 2xl:h-15 bg-coffee-800 hover:bg-[#7e4300] flex items-center justify-center hover:shadow-[0px_4px_0px_0px_#3d2708] hover:-translate-y-1 duration-150;
+        @apply md:w-25 lg:w-30 2xl:w-35 h-10 lg:h-12 2xl:h-15 bg-coffee-800 hover:bg-[#7e4300] flex items-center justify-center hover:shadow-[0px_4px_0px_0px_#3d2708] hover:-translate-y-1 duration-150;
     }
     .btn-text{
-        @apply text-coffee-50 text-lg 2xl:text-xl;
+        @apply text-coffee-50 text-base lg:text-lg 2xl:text-xl;
     }
-    .project-card{
-        @apply w-100 2xl:w-125 h-140 2xl:h-180 bg-coffee-100 flex flex-col;
+
+    .project-card-horizontal{
+        @apply w-80 lg:w-100 2xl:w-125 h-120 lg:h-140 2xl:h-180 bg-coffee-100 flex flex-col shrink-0;
+    }
+    .project-card-vertical{
+        @apply w-80 lg:w-100 2xl:w-125 h-120 lg:h-140 2xl:h-180 bg-coffee-100 flex flex-col shrink-0;
     }
     .readme-btn{
-        @apply hover:-translate-y-0.5 hover:drop-shadow-[0px_2px_0_#fedbb3] duration-100
+        @apply hover:-translate-y-0.5 hover:drop-shadow-[0px_2px_0_#fedbb3] duration-100;
     }
 
 
