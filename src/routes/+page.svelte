@@ -90,4 +90,31 @@
             </div>
         </div>
     </section>
+    <section class="section bg-coffee-50">
+        <p class="font-normal text-base 2xl:text-xl text-coffee-800">Readme</p>
+        <div class="flex flex-row gap-6 2xl:gap-10">
+            <div class="w-125 h-180 bg-coffee-100 flex flex-col">
+                <img alt="progoat" class="bg-amber-700 w-full h-80" />
+                <div class="flex flex-col p-7.5 gap-7.5 flex-1">
+                    <h2 class="text-coffee-800 text-[3rem] font-semibold">progoat</h2>
+                    <p class="text-coffee-900 text-xl leading-snug">LLM-powered CLI for programming education. Generate structured courses on any topic and solve coding exercises directly from your terminal.</p>
+                    <div class="flex gap-3">
+                        <div class="tag-bg">
+                            <p class="tag-text">Go</p>
+                        </div>
+                        <div class="tag-bg">
+                            <p class="tag-text">CLI</p>
+                        </div>
+                    </div>
+                    <div class="btn-bg mt-auto">
+                        <a href="https://github.com/minotto165" target="_blank" class="btn-text">
+                            <p>
+                                <iconify-icon icon="mingcute:github-line" class="align-bottom -mx-1.5"></iconify-icon> Github
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>

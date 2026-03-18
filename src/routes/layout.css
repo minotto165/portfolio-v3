@@ -50,4 +50,16 @@
     .bar-percentage{
         @apply text-coffee-200 text-lg 2xl:text-2xl font-light;
     }
+    .tag-bg{
+        @apply w-20 h-10 bg-coffee-200 flex items-center justify-center;
+    }
+    .tag-text{
+        @apply text-coffee-800 text-lg;
+    }
+    .btn-bg{
+        @apply w-35 h-15 bg-coffee-800 flex items-center justify-center;
+    }
+    .btn-text{
+        @apply text-coffee-50 text-xl;
+    }
 }
