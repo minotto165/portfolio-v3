@@ -46,12 +46,12 @@
         <!-- vertical -->
         <div class="header-line-v left-8 md:left-12"></div>
         <!-- horizontal -->
-        <div class="header-line-h top-11.5 sm:top-11.75 lg:top-11.5 2xl:top-17.5"></div>
-        <div class="header-line-h top-22.25 sm:top-24.5 lg:top-45.5 2xl:top-62.5"></div>
-        <div class="header-line-h top-27.5 sm:top-29.75 lg:top-52 2xl:top-72.25"></div>
-        <div class="header-line-h top-33 sm:top-35.25 lg:top-62.75 2xl:top-89.5"></div>
-        <div class="header-line-h top-37.75 sm:top-39.75 lg:top-69.5 2xl:top-99"></div>
-        <div class="header-line-h top-39.5 sm:top-41.75 lg:top-72.75 2xl:top-102.5"></div>
+        <div class="header-line-h top-11.5 sm:top-11.75 md:top-11.75 lg:top-11.5 2xl:top-17.5"></div>
+        <div class="header-line-h top-22.25 sm:top-24.5 md:top-34.25 lg:top-45.5 2xl:top-62.5"></div>
+        <div class="header-line-h top-27.5 sm:top-29.75 md:top-39.75 lg:top-52 2xl:top-72.25"></div>
+        <div class="header-line-h top-33 sm:top-35.25 md:top-46.25 lg:top-62.75 2xl:top-89.5"></div>
+        <div class="header-line-h top-37.75 sm:top-39.75 md:top-51 lg:top-69.5 2xl:top-99"></div>
+        <div class="header-line-h top-39.5 sm:top-41.75 md:top-53.75 lg:top-72.75 2xl:top-102.5"></div>
     </section>
     <section class="section bg-coffee-50">
         <p class="section-title text-coffee-800">Readme</p>
@@ -144,6 +144,31 @@
                     </div>
                 </div>
             {/each}
+        </div>
+    </section>
+    <section class="section bg-coffee-100">
+        <div class="flex flex-row">
+            <div class="flex flex-col gap-4">
+                <h3 class="text-coffee-800 font-semibold text-2xl md:text-4xl">Portfolio-v3</h3>
+                <div class="text-coffee-900 text-2xl md:text-3xl flex flex-row gap-3 md:gap-4">
+                    <!-- svelte-ignore a11y_consider_explicit_label -->
+                    <a href="https://github.com/minotto165" target="_blank" class="readme-btn">
+                        <iconify-icon icon="mingcute:github-line"></iconify-icon>
+                    </a>
+                    <!-- svelte-ignore a11y_consider_explicit_label -->
+                    <a href="https://x.com/minotto165" target="_blank" class="readme-btn">
+                        <iconify-icon icon="mingcute:twitter-line"></iconify-icon>
+                    </a>
+                    <!-- svelte-ignore a11y_consider_explicit_label -->
+                    <a href="https://youtube.com/@minotto165" target="_blank" class="readme-btn">
+                        <iconify-icon icon="mingcute:youtube-line"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+
+            <a href="https://github.com/minotto165/portfolio-v3" target="_blank" class="ml-auto">
+                <p class="text-coffee-900 text-lg md:text-xl">Source (Github)</p>
+            </a>
         </div>
     </section>
 </div>
