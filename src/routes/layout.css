@@ -36,13 +36,13 @@
         @apply h-px lg:h-0.5 w-full bg-[#532C0020] absolute inset-0;
     }
     .section{
-        @apply px-8 md:px-12 py-8 md:py-10 lg:py-12 2xl:py-16 flex flex-col gap-4 md:gap-6 lg:gap-8 2xl:gap-10;
+        @apply px-8 md:px-12 py-10 lg:py-12 2xl:py-16 flex flex-col gap-6 lg:gap-8 2xl:gap-10;
     }
     .section-title{
         @apply font-normal text-[0.6rem] md:text-sm lg:text-base 2xl:text-xl
     }
     .body-text{
-        @apply text-sm md:text-lg lg:text-xl 2xl:text-3xl space-y-2 2xl:space-y-4 
+        @apply text-lg lg:text-xl 2xl:text-3xl space-y-2 2xl:space-y-4 
     }
     .bar-bg{
         @apply w-full max-w-4xl h-1.5 md:h-2 2xl:h-3 bg-coffee-950;
@@ -67,13 +67,6 @@
     }
     .btn-text{
         @apply text-coffee-50 text-base lg:text-lg 2xl:text-xl;
-    }
-
-    .project-card-horizontal{
-        @apply w-80 lg:w-100 2xl:w-125 h-120 lg:h-140 2xl:h-180 bg-coffee-100 flex flex-col shrink-0;
-    }
-    .project-card-vertical{
-        @apply w-80 lg:w-100 2xl:w-125 h-120 lg:h-140 2xl:h-180 bg-coffee-100 flex flex-col shrink-0;
     }
     .readme-btn{
         @apply hover:-translate-y-0.5 hover:drop-shadow-[0px_2px_0_#fedbb3] duration-100;
